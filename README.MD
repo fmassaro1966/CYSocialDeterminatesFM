@@ -6,7 +6,7 @@
          Things I did: 
          a. Thought of questions for social determinants. 
          b. There were no duplicates. 
-         c. I deleted columns of ethnicticity as it wasnt necessary. 
+         c. I deleted columns of ethnicticity as it wasnt necessary due to lack of diversity in categories.
          d. I added a virtual enviornment.    
 5. Credits: Blake for the education in github and Ailene for her patience and pushing me to do better.
 
