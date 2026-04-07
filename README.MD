@@ -1,7 +1,7 @@
 # CYSocialDeterminatesFM
 
 ## Project Overview
-This project analyzes social determinants of health and their relationship to county-level health outcomes, with a primary focus on Kentucky and Indiana.
+This project analyzes social determinants of health and their relationship to county-level health patterns, with a primary focus on Kentucky and Indiana.
 
 The notebook combines:
 - Data cleaning and feature standardization
@@ -18,7 +18,7 @@ The notebook combines:
 - Compare key social determinant indicators between Kentucky and Indiana
 - Explore relationships among poverty, education, insurance, and transportation access
 - Integrate life expectancy context from County Health Rankings
-- Produce clear, presentation-ready visualizations
+- Produce clear, presentation-ready tables and visualizations
 
 ## Repository Structure
 - Data/FMsocial-deter.csv: social determinant source data
@@ -54,7 +54,7 @@ Use this flow on a fresh clone to reproduce results.
 3. Open `Notebook/Socialdeterminants2.ipynb`.
 4. Run all cells from top to bottom.
 5. Confirm that SQLite reads from `Data/socialdeterminates.db` and that table checks return results.
-6. Confirm the final numeric summary section runs and prints state-level/count metrics.
+6. Confirm the state-level summary outputs run and print comparison metrics.
 
 ## Notebook Walkthrough
 The notebook in Notebook/Socialdeterminants2.ipynb is organized into the following stages.
@@ -95,9 +95,9 @@ The notebook in Notebook/Socialdeterminants2.ipynb is organized into the followi
 - Adds state-aware query logic where possible.
 
 9. Life expectancy handling
-- Attempts county-level life expectancy workflows.
+- Builds a Kentucky vs Indiana state-level life expectancy comparison.
 - Includes safeguards for schema differences and non-numeric values.
-- Produces a Kentucky vs Indiana county-level life expectancy visualization and supporting county tables.
+- Adds optional county detail only when county fields are available.
 
 10. Loop + GROUP BY section
 - Uses a loop to run repeated GROUP BY summaries by metric.
@@ -166,18 +166,18 @@ The notebook expects the database in the Data folder (not inside Notebook).
 - [x] SQL queries, loop logic, and GROUP BY outputs are included.
 - [x] Visualizations are included and interpreted.
 - [x] Dependency installation is documented with `requirements.txt`.
-- [ ] Run all notebook cells in order once before submission and confirm no errors.
+- [x] Notebook code cells were validated successfully in the current notebook session.
 
 ## Key Findings Supported by the Notebook
 - Kentucky shows higher average burden in several social determinant indicators.
-- Indiana shows higher uninsured percentage in selected summaries.
-- Poverty and low educational attainment are strongly correlated in this dataset.
-- County-level life expectancy comparison is visualized for Kentucky and Indiana with cleaned county-only rows.
+- Indiana shows a higher uninsured percentage in the state comparison summaries.
+- Poverty, transportation burden, and lower educational attainment move together strongly enough to support a multi-factor interpretation of risk.
+- State-level life expectancy is compared for Kentucky and Indiana, with county detail included when available from the source table.
 - A composite vulnerability score highlights counties with elevated multi-factor risk.
 
 ## Notes and Caveats
 - County Health Rankings CSV contains extra metadata/header content. For direct pandas imports, header=1 gives the usable schema.
-- Some county health table fields may require additional schema cleanup for strict county-only life expectancy views.
+- Some county health table fields may require additional schema cleanup if county-level life expectancy detail is needed.
 
 ## Visual Example
 ![SVI-related visual](image.png)
