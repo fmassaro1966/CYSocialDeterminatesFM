@@ -1,4 +1,4 @@
-1. Table of Contents
+Table of Contents
 Project Summary
 Installation Instructions
 Usage Examples
@@ -7,15 +7,22 @@ Credits
 Data Contribution
 Additional Information
 
-2. Installation Instructions: Using the "FrancineMassaro_socialdet.csv"CSV data to show correlations and percentages from homelessness, no intenet, no vehicles and no high school diploma.Install all below. 
-3. Usage Examples: Used Matplotlib, Pandas, Seaborn, Numpy, Pandas, and Jupyter Notebook.
-4. Contribution Guidelines: Data got messed up as I added tables and reran some earlier data.    
+
+Project Title: Social Determinants that affect one’s abilities to access services and basic necessities
+Proposed By: Francine Massaro
+GitHub Repository: fmassaro1966/CYSocialDeterminatesFM
+
+
+2. Installation Instructions: Using the "Data/FMsocial_deter.csv" and both 2025 County Health Rankings for Indiana and Kentucky. CSV data show correlations and percentages from homelessness, no intenet, no vehicles and no high school diploma. Life expectancy is added with the addition of the latest CSV file.
+3. Usage Examples: Used Matplotlib, Pandas, Seaborn, Numpy, Python, and Jupyter Notebook.
+4. Contribution Guidelines:     
 
          Things I did: 
-         a. Thought of questions for social determinants. 
+         a. Collected data on social determinants. 
          b. There were no duplicates. 
          c. I deleted columns of ethnicticity as it wasnt necessary due to lack of diversity in categories.
-         d. I added a virtual enviornment.    
+         d. I added a virtual enviornment.   
+          
 5. Credits:
 
 6.  Data contribution is from CDC/ATSDR SVI 2022 https://www.atsdr.cdc.gov/place-health/php/svi/index.html
