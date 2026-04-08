@@ -25,8 +25,6 @@ Using the project files in this repository, the workflow:
 - Notebook/Socialdeterminants2.ipynb: Main analysis notebook.
 - requirements.txt: Project dependencies.
 - image.png: Current project image.
-- Data Analysis Capstone Template.docx: Capstone template document.
-- SVI2022Documentation_ZCTA.pdf: SVI reference documentation.
 
 **Project Setup Instructions**
 1. Clone the repository.
@@ -96,7 +94,6 @@ Using the project files in this repository, the workflow:
 **Data Source Files**
 - Data/FMsocial-deter.csv
 - Data/2025 County Health Rankings Data.csv
-- SVI2022Documentation_ZCTA.pdf
 
 **Notes**
 - The County Health Rankings CSV may require careful header handling during import.
