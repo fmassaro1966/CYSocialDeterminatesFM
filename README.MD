@@ -59,8 +59,8 @@ Using the project files in this repository, the workflow:
 **Database Entity Relationship Diagram**
 ![ERD Diagram](Data/erd_diagram.png)
 
-**Current Project Image**
-![Project Image](image.png)
+**Social Determinates Determined by CDC**
+![Social Determinants Image](image.png)
 
 **Analysis Outputs**
 - Kentucky versus Indiana versus National Average comparisons for key indicators.
@@ -94,10 +94,6 @@ Using the project files in this repository, the workflow:
 **Data Source Files**
 - Data/FMsocial-deter.csv
 - Data/2025 County Health Rankings Data.csv
-
-**Notes**
-- The County Health Rankings CSV may require careful header handling during import.
-- The notebook expects Data/socialdeterminates.db to remain in the Data folder.
 
 **Contribution**
 Contributions are welcome through issues and pull requests.
