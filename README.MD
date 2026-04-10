@@ -4,6 +4,9 @@
 **Objective**
 This project analyzes county-level social determinants of health in Kentucky and Indiana, now with national-average baselines, and connects those patterns to health context from County Health Rankings. The goal is to identify meaningful county-level risk patterns that can support interpretation, communication, and planning.
 
+**Database Design Justification**
+The database is designed for analytics at the county level, which is the shared unit across both source datasets. This was done to keep joins consistent, reduce setup complexity, and make results easy to reproduce in a notebook workflow. A simple SQLite schema was used to support reliable grouped SQL summaries and Kentucky/Indiana plus national comparisons.
+
 **Project Overview**
 Using the project files in this repository, the workflow:
 
@@ -59,7 +62,7 @@ Using the project files in this repository, the workflow:
 **Database Entity Relationship Diagram**
 ![ERD Diagram](Data/erd_diagram.png)
 
-**Social Determinates Determined by CDC**
+**Social Determinants Determined by CDC**
 ![Social Determinants Image](image.png)
 
 **Analysis Outputs**
